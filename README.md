@@ -1,6 +1,6 @@
-# OSI-STM32F411-DB_T
+# OSI-STM32F407-DB_T
 
-# One side implementation of the Leraso rover drive/steering chain with a STM32F411 Disco Board
+# One side implementation of the Leraso rover drive/steering chain with a STM32F407 Disco Board
 
 ##  the STM32F441 Disco baord is the starting point for the later implementation of a drive unit
 
