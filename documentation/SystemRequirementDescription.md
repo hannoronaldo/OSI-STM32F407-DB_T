@@ -3,11 +3,11 @@
 <i> =============== SysRS start ============== </i>
 
 ## Table of contents
- - Project goals
- - System description
- - Hardware prerequisit
- - Hardware Blocks
- - Function Blocks
+ - [Project goals](#project-goals)
+ - [System description](#system-description)
+ - [Hardware prerequisit](#hardware-prerequisit)
+ - [Hardware Blocks](#hardware-blocks)
+ - [Software Function Blocks](#software-function-blocks)
 
 ## Project goals
 
@@ -24,20 +24,22 @@ xxxx
 
 There are 5 PCB's are involved:
 ### 1x BeagleBone Black C1.2
-will use in the step at the CAN communication will be established after loopback and external test are successful.
+We will use this board in the latest step of the implementation with the CAN communication between the BBB and the STM32 dev board, in earliert stages we will implement also the CAN communication with loopback and extern devices
 ### 1x STM32F407 Discovery Board
-this board will use a s a development platform to define funktionblocks and test the STM32 side for motor/steering and CAN communication.
-Also to see the flash and RAM usage to implement later a module based on the BlackPill dev board.
+this board will use as a development platform to define funktion blocks for motor/steering/distance measurement and CAN communication.
+Also to see what amount of flash and RAM usage consumtion is needed to implement later a module based on the BlackPill dev board.
 ### 1x MCP2515 CAN controller board
-this MCP2515 board will connect with the STM32 disco baod to establish the CAN communication.
+this MCP2515 board will connect with the STM32 disco boad to establish the CAN communication.
 ### 1x TJA1050 CAN transceiver board
 this TJA1050 transceiver board will connect with the BBB to establish the CAN communication. It's can be a modified MCP2515 board
 
 ## Hardware Blocks
 
-xxx 
+In the picture below you se a rough wiring between the boards.
 
-## Function Blocks
+![Hardware Board wiring Overview](images/hardware_connection.png)
+
+## Software Function Blocks
 
 xxx
  
